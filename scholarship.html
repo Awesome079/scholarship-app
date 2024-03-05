@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship</title>
+    <link rel="stylesheet" href="scholarship.css">
+</head>
+<body>
+    <form action="">
+        <header class="D-Head">
+            <h1>SCHOLARSHIP FORM</h1>
+            <h4>Rework Academy</h4>
+        </header>
+
+        <main class="form-section">
+
+            <div class="form-section1">
+                <div>
+                    <input placeholder="FIRST NAME" type="text" id="putFirstName" name="FIRST NAME"> <br>
+                    <span id="err"></span><br>
+                </div>
+
+                <div>
+                    <input placeholder="LAST NAME" type="text" id="putLastName" name="LAST NAME"><br>
+                    <span id="odd"></span><br>
+                </div>
+            </div>
+
+            
+
+            <div class="form-section2">
+                <div>
+                    <!-- <select name="" id="putAge" > -->
+
+                        <input placeholder="AGE" id="age" type="number">
+                        <!-- <option value="">AGE</option>
+                        <option value="one">18-24</option>
+                        <option value="two">25-30</option>
+                        <option value="three">31-35</option>
+                        <option value="four">36-40</option>
+                        <option value="five">41 and above</option>
+                    </select> -->
+                    <span id="eve"></span><br>
+                </div>
+
+            <div>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="">Select Gender</option>
+                    <option value="male">MALE</option>
+                    <option value="female">FEMALE</option>
+                    <option value="other">Other</option>
+                </select>
+                    <span id="genderError" class="error"></span><br>
+                    
+            </div>
+
+            <!-- <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <span id="genderError"></span -->
+
+
+
+        </div>
+
+            <div class="form-section3">
+                <div>
+                    <input placeholder="PHONE NUMBER" type="number" id="putPhoneNumber" name="putPhoneNumber">
+                    <span id="food"></span><br>
+                </div>
+
+                <div>
+                    <input placeholder="SCHOOL" type="text" id="putSchool" name="putSchool">
+                    <span id="awe"></span><br> 
+                </div>
+            </div>
+
+            <div class="form-section4">
+                <div>
+                    <select name="" id="inputCountries" name="inputCountries">
+                        <option value="">COUNTRY</option>
+                        <option value="one">AFRICA COUNTRIES</option>
+                        <option value="two">ASIA</option>
+                        <option value="three">SOUTH AMERICA</option>
+                        <option value="four">NORTH AMERICA</option>
+                        <option value="five">REST OF THE WORLD</option>
+                    </select>
+                    <span id="cons"></span><br>
+                </div>
+
+                <div>
+                    <input placeholder="EMAIL" type="text" id="putEmailAddress" name="putEmailAddress"> <br><br>
+                    <span id="boss"></span><br>
+                </div>
+            </div>
+
+
+
+            <div class="select_container" 
+            id="select_container">
+
+            <h1>SUBJECT & GRADE</h1>
+                <h2>Select eight subjects form the list of option and input your grades</h2>
+
+                <select class="selects" id="select1">
+                    <option value="">Select</option>
+                </select> <input placeholder="GRADE" type="number"> <br> <br>
+
+                <select class="selects" id="select2">
+                    <option value="">Select</option>
+                </select> <input placeholder="GRADE" type="number"> <br> <br>
+
+                <select class="selects" id="select3">
+                    <option value="">Select</option>
+                </select> <input placeholder="GRADE" type="number"> <br> <br>
+
+                <select class="selects" id="select4">
+                    <option value="">Select</option>
+                </select> <input placeholder="GRADE" type="number"> <br> <br>
+
+                <select class="selects" id="select5">
+                    <option value="">Select</option>
+                </select> <input placeholder="GRADE" type="number"> <br> <br>
+
+                <select class="selects" id="select6">
+                    <option value="">Select</option>
+                </select> <input placeholder="GRADE" type="number"> <br> <br> 
+
+                <select class="selects" id="select7">
+                    <option value="">Select</option>
+                </select> <input placeholder="GRADE" type="number"> <br> <br>
+                <select class="selects" id="select8">
+                    <option value="">Select</option>
+                </select> <input placeholder="GRADE" type="number"> <br> <br>
+            </div>
+        
+
+
+        
+            <!-- <div class="select_container" id="select_container">
+                <h1>SUBJECT & GRADE</h1>
+                <h2>Select eight subjects form the list of option and input your grades</h2>
+
+                <div class="grade-one">
+                    <select class="selects" id="subject1">
+                        <option value="">SUBJECT </option required>
+                    </select><br><br>
+                    <input placeholder="GRADE" id="gradeOne" type="number" required> <br><br>
+                </div>
+
+                <div class="grade-two">
+                    <select class="selects" id="subject2">
+                        <option value="">SUBJECT</option required>
+                    </select><br><br>
+                        <input placeholder="GRADE" id="gradeTwo" type="number" required> <br><br>
+                </div>
+
+                <div class="grade-three">
+                    <select class="selects" id="subject3">
+                        <option value="">SUBJECT</option required>
+                    </select><br><br>
+                        <input placeholder="GRADE" id="gradeThree"  type="number" required> <br><br>
+                </div>
+
+                <div class="grade-four">
+                    <select class="selects" id="subject4">
+                        <option value="">SUBJECT</option required>
+                    </select><br><br>
+                        <input placeholder="GRADE" id="gradeFour"   type="number" required> <br><br>
+                </div>
+
+                <div class="grade-five">
+                    <select class="selects" id="subject5">
+                        <option value="">SUBJECT</option required>
+                    </select><br><br>
+                        <input placeholder="GRADE" id="gradeFive"  type="number" required> <br><br>
+                </div>
+
+                <div class="grade-six">
+                    <select class="selects" id="subject6">
+                        <option value="">SUBJECT</option required>
+                    </select><br><br>
+                        <input placeholder="GRADE" id="gradeSix" type="number" required> <br><br>
+                </div>
+
+                <div class="grade-seven">
+                    <select class="selects" id="subject7">
+                        <option value="">SUBJECT</option required>
+                    </select><br><br>
+                        <input placeholder="GRADE" id="gradeseven"  type="number" required> <br><br>
+                </div>
+
+                <div class="grade-eight">
+                    <select class="selects" id="subject8">
+                        <option value="" >SUBJECT</option required>
+                    </select><br><br>
+                        <input placeholder="GRADE" id="gradeEight"   type="number" required> <br><br>
+                </div>
+            </div> -->
+
+        <div class="apply-scholarship">
+            <button type="button" id="apply" onclick="scholarship()">APPLY</button>
+        </div>
+
+        
+
+        </main>
+
+
+    </form>
+
+    <script src="scholarship.js"></script>
+</body>
+</html>
+
+
+
+
