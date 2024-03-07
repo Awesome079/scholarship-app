@@ -42,11 +42,8 @@ if (putAge === "") {
     document.getElementById('eve').innerHTML = "Please fill in an age .";
     eve.style.color = "red"
     return false;
-} else {
-        document.getElementById('eve').innerHTML = "";
-    return true;
-
- }if (age >= 18 && age <= 24) {
+} else if
+  (age >= 18 && age <= 24){
     pointsAge = 100;
 } else if (age >= 25 && age <= 30) {
     pointsAge = 80;
@@ -58,6 +55,8 @@ if (putAge === "") {
     pointsAge = 10;
 }else{
 
+    document.getElementById('eve').innerHTML = "";
+    return true;
 } 
    
     
@@ -96,7 +95,7 @@ function schoolName(){
     let school = document.getElementById('putSchool').value;
     if (school === "") {
         document.getElementById('awe').innerHTML = "Please enter your school.";
-        food.style.color = "red"
+        awe.style.color = "red"
         return false;
     } else {
         document.getElementById('awe').innerHTML = "";
@@ -112,12 +111,9 @@ function countriesDetail(){
         document.getElementById('cons').innerHTML = "Please select a country.";
         cons.style.color = "red"
         return false;
-    } else {
-        document.getElementById('cons').innerHTML = "";
-        return true;
-    
 
-    }if (inputCountries = "one"){
+    
+    }else if (inputCountries = "one"){
         points += 50;
     }else if(inputCountries = "two"){
         points += 40;
@@ -127,12 +123,17 @@ function countriesDetail(){
         points += 20;
     }else if(inputCountries = "five"){
         points += 10;
-    }else{
-
-    }
-        
-}     
     
+
+    
+        
+    } else {
+        document.getElementById('cons').innerHTML = "";
+        return true;
+       
+} 
+
+}  
 function emailDetail(){
     let putEmail = document.getElementById('putEmailAddress').value;
     if (putEmail === "") {
@@ -144,66 +145,6 @@ function emailDetail(){
         return true;
     }
 }
-
-
-// let subjects = ['mathematics','English language', 'Economices','physics','Biology','Further Mathematics','Physics', 'Chemistry', 'Commerce','Financial Accounting','Technical Drawing', 'Geography','Agricultural Science', 'French', 'Food & Nutrition','Literature','Computer Studies','Library Studies','Reading Culture'];
-// let selectObj = {}
-// let score = 0;
-
-//     function selectOption() {
-
-//     let selectContainer= document.querySelector('#select_container')
-//     let selects = selectContainer.querySelectorAll('select');
-
-//     selects.forEach((select) => {
-//         for (let i = 0; i < subjects.length; i++){
-//             let option = document.createElement('option')
-//             option.setAttribute('value',subjects[i])
-//             option.innerHTML = subjects[i]
-//             select.appendChild(option)
-//         }
-        
-//     })
-
-//     selectContainer.addEventlister('click',function (){
-//         let options =  selectContainer.querySelectorAll('option')
-//         selects.forEach(select => {
-//             select.addEventlister('change',(e) => {
-//                 selectObj[e.target.id] = e.target.value
-//             })
-//         }) 
-// options.forEach(option =>{
-//     if (Object.values(selectObj).find(val => option.value == val)
-//      != undefined) {
-//                 option.disabled = true
-//             }else{
-//                 option.disabled = false
-//             }
-//         })
-
-//     })
-
-//     let pointsGrade = 0;
-//         let averageGrade = (mathGrade + englishGrade) / 2;
-//         if (averageGrade >= 90 && averageGrade <= 100) {
-//             pointsGrade = 150;
-//         } else if (averageGrade >= 85 && averageGrade <= 89) {
-//             pointsGrade = 140;
-//         } else if (averageGrade >= 75 && averageGrade <= 84) {
-//             pointsGrade = 120;
-//         } else if (averageGrade >= 65 && averageGrade <= 74) {
-//             pointsGrade = 100;
-//         } else if (averageGrade >= 60 && averageGrade <= 64) {
-//             pointsGrade = 80;
-//         } else if (averageGrade >= 50 && averageGrade <= 59) {
-//             pointsGrade = 50;
-//         } else if (averageGrade >= 40 && averageGrade <= 49) {
-//             pointsGrade = 20;
-//         }
-        
-//         console.log()
-
-// }
 
 
 let subjects = ['Mathematics', 'English Language', 'Physics', 'Chemistry', 'Literature', 'Geography', 'Commerce', 'Economics', 'Government', 'Biology', 'Poetry', 'Music','Commerce','Financial Accounting','Technical Drawing', 'Geography','Agricultural Science', 'French', 'Food & Nutrition','Literature','Computer Studies','Library Studies','Reading Culture'];
@@ -238,7 +179,36 @@ function selectOption() {
             }
         })
     })
+
+    let Aa = selects.values;
+
+    let sum = ("Aa+Bb+Cc+Dd+Ee+Ff+Gg+Hh")
+   
+    let averageGrade = (sum) / 8;
+    if (averageGrade >= 90 && averageGrade <= 100) {
+        pointsGrade = 150;
+    } else if (averageGrade >= 85 && averageGrade <= 89) {
+        pointsGrade = 140;
+    } else if (averageGrade >= 75 && averageGrade <= 84) {
+        pointsGrade = 120;
+    } else if (averageGrade >= 65 && averageGrade <= 74) {
+        pointsGrade = 100;
+    } else if (averageGrade >= 60 && averageGrade <= 64) {
+        pointsGrade = 80;
+    } else if (averageGrade >= 50 && averageGrade <= 59) {
+        pointsGrade = 50;
+    } else if (averageGrade >= 40 && averageGrade <= 49) {
+        pointsGrade = 20;
+    }
+    
+    console.log()
+
+
+
 }
+
+
+
 
 selectOption()
 
